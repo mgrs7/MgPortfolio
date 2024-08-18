@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2299%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient2300%26quot%3b)'%3e%3c/rect%3e%3cpath d='M160.693%2c257.628C214.607%2c261.314%2c275.05%2c251.421%2c302.441%2c204.837C330.076%2c157.837%2c311.07%2c98.978%2c280.537%2c53.806C253.84%2c14.309%2c208.351%2c-6.061%2c160.693%2c-4.873C115.191%2c-3.739%2c73.629%2c20.175%2c50.77%2c59.534C27.806%2c99.073%2c26.776%2c147.525%2c48.961%2c187.506C71.828%2c228.715%2c113.675%2c254.413%2c160.693%2c257.628' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1194.537%2c491.638C1248.18%2c492.821%2c1296.895%2c461.568%2c1323.772%2c415.129C1350.699%2c368.603%2c1354.111%2c310.431%2c1325.89%2c264.678C1298.877%2c220.884%2c1245.991%2c205.912%2c1194.537%2c205.607C1142.419%2c205.299%2c1086.841%2c218.157%2c1060.464%2c263.108C1033.843%2c308.475%2c1048.194%2c364.27%2c1074.811%2c409.639C1101.045%2c454.356%2c1142.706%2c490.495%2c1194.537%2c491.638' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M443.953%2c237.183C478.101%2c235.897%2c500.561%2c206.07%2c518.073%2c176.726C536.214%2c146.328%2c552.768%2c111.811%2c537.963%2c79.656C520.977%2c42.766%2c484.513%2c13.669%2c443.953%2c15.746C405.714%2c17.704%2c382.544%2c54.332%2c365.259%2c88.498C350.038%2c118.584%2c343.718%2c152.897%2c359.49%2c182.697C376.288%2c214.435%2c408.069%2c238.534%2c443.953%2c237.183' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M203.624%2c409.468C242.561%2c410.81%2c280.206%2c393.716%2c301.288%2c360.952C324.253%2c325.262%2c331.845%2c279.54%2c311.019%2c242.561C289.863%2c204.997%2c246.717%2c186.258%2c203.624%2c187.536C162.718%2c188.749%2c125.568%2c212.294%2c106.724%2c248.621C89.209%2c282.387%2c97.336%2c322.015%2c116.965%2c354.598C135.874%2c385.986%2c167.002%2c408.206%2c203.624%2c409.468' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1206.644%2c311.02C1261.924%2c309.617%2c1312.844%2c279.992%2c1339.446%2c231.513C1365.102%2c184.758%2c1356.852%2c129.649%2c1332.086%2c82.416C1305.033%2c30.823%2c1264.899%2c-21.738%2c1206.644%2c-21.757C1148.369%2c-21.776%2c1109.422%2c31.426%2c1081.063%2c82.335C1053.692%2c131.471%2c1034.558%2c189.263%2c1061.631%2c238.563C1089.508%2c289.327%2c1148.748%2c312.489%2c1206.644%2c311.02' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M112.554%2c541.641C141.017%2c541.393%2c163.385%2c519.919%2c177.15%2c495.005C190.399%2c471.024%2c192.975%2c442.863%2c180.642%2c418.399C166.909%2c391.157%2c143.061%2c366.642%2c112.554%2c366.865C82.314%2c367.087%2c60.016%2c392.499%2c46.171%2c419.384C33.614%2c443.767%2c32.888%2c472.047%2c45.975%2c496.149C59.722%2c521.467%2c83.746%2c541.892%2c112.554%2c541.641' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2299'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2300'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(158%2c 0%2c 25%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        header {
+            box-shadow: 0 0 10px black;
+            position: fixed;
+            width: 100%;
+            background-color: white;
+        }
+
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .im {
+            width: 200px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            margin: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        ul li a:hover {
+            color: aqua;
+            background: linear-gradient(35deg, red, blue);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    
+        /*--home--*/
+
+        #main {
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(35deg, red, blue);
+            box-shadow: 0 0 10px;
+
+        }
+
+        #main h1 {
+            font-size: 50px;
+        }
+
+        span {
+            color: rgb(4, 253, 4);
+        }
+
+        #main p {
+            font-size: 17px;
+            color: gray;
+            font-weight: 800;
+            line-height: 25px;
+        }
+
+        #main a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+
+        }
+
+        .images img {
+            width: 300px;
+        }
+
+        /*--projects--*/
+        #projects {
+            text-align: center;
+        }
+
+        .cert {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+
+        .cert .two img {
+            max-width: 90%;
+            margin-top: 17px;
+            width: 350px;
+            height: 430px;
+            margin-left: 14px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px;
+            flex-basis: 20%;
+            transition: transform 400ms;
+        }
+
+        .cert .three img {
+            max-width: 90%;
+            width: 450px;
+            margin-top: 75px;
+            margin-left: 7px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px;
+            flex-basis: 20%;
+            transition: transform 400ms;
+        }
+
+        .cert img:hover {
+            transform: scale(1.10);
+        }
+
+        .cert1 {
+            display: flex;
+            justify-content: space-evenly;
+            overflow-x: scroll;
+        }
+
+        .cert1 img {
+            width: 390px;
+            height: 280px;
+            margin: 20px;
+            margin-left: 64px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px;
+            transition: transform 400ms;
+        }
+
+        .cert1 .four img:hover {
+            transform: scale(1.10);
+        }
+
+        .cert1::-webkit-scrollbar {
+            display: none;
+        }
+
+        .proj {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .proj img {
+            max-width: 90%;
+            padding: 10px;
+            height: 300px;
+            border-radius: 15px;
+            flex-basis: 40%;
+            box-shadow: 0 0 10px;
+            margin: 15px;
+            transition: transform 400ms;
+        }
+
+        .proj img:hover {
+            transform: scale(1.15);
+        }
+
+        @media screen and (max-width: 800px) {
+            .one {
+                flex-basis: 80%;
+            }
+
+            .two {
+                flex-basis: 80%;
+            }
+
+            .three {
+                flex-basis: 80%;
+            }
+        }
+
+
+
+        /*--contact--*/
+        #contact {
+            box-shadow: 0 0 10px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1214%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1215%26quot%3b)'%3e%3c/rect%3e%3cpath d='M-154.55 456.81 a182.08 182.08 0 1 0 364.16 0 a182.08 182.08 0 1 0 -364.16 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M742.34 500.33 a128.19 128.19 0 1 0 256.38 0 a128.19 128.19 0 1 0 -256.38 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M915.8 134.22 a179.62 179.62 0 1 0 359.24 0 a179.62 179.62 0 1 0 -359.24 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M410.16 236.01 a154.95 154.95 0 1 0 309.9 0 a154.95 154.95 0 1 0 -309.9 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M11.4 61.3 a109.32 109.32 0 1 0 218.64 0 a109.32 109.32 0 1 0 -218.64 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M999.66 452.19 a123.65 123.65 0 1 0 247.3 0 a123.65 123.65 0 1 0 -247.3 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1214'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1215'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(154%2c 158%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+            background-size: cover;
+        }
+
+        #contact .icon {
+            color: #3498db;
+            font-size: 25px;
+        }
+
+        .icon1 {
+            color: rgb(25, 236, 25);
+            font-size: 25px;
+        }
+
+        #contact p {
+            font-size: 18px;
+
+        }
+
+        #contact p a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .h {
+            background: linear-gradient(35deg, rgb(31, 236, 31), blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            color: rgb(66, 224, 66);
+        }
+
+        #about {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            background-color: white;
+        }
+
+        #about .spa {
+            color: rgb(192, 21, 21);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 0 0 6px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            #container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+
+            #main {
+                padding-left: 10px;
+            }
+
+            #main h1 {
+                font-size: 2rem;
+            }
+
+            #main p {
+                font-size: 0.9rem;
+            }
+
+        }
+
+        @media screen and (max-width: 500px) {
+
+            body {
+                width: 520px;
+            }
+
+            #container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+
+            #main {
+                padding-left: 20px;
+            }
+
+            #main h1 {
+                font-size: 1.5rem;
+            }
+
+            #main p {
+                font-size: 0.8rem;
+            }
+        }
+
+
+        .slider-container {
+            position: relative;
+            max-width: 98%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 15px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 10px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .slide .im{
+            width: 500px;
+            object-fit: cover;
+            box-shadow: 0 0 10px;
+        }
+        .slide .im1{
+            width: 500px;
+            object-fit: cover;
+            box-shadow: 0 0 10px;
+            background-color: white;
+        }
+        
+
+        .content {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .slider-container {
+                max-width: 100%;
+                margin: 3px;
+            }
+
+            .prev, .next {
+                padding: 5px;
+            }
+
+            .content {
+                font-size: 14px;
+                padding: 8px;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            
+            <img class="im" src="logo.png" alt="Logo">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="con">
+            <h1>Hi, I am <span>Meganathan</span></h1>
+            <p>This is my Official Portfolio
+                Website to shows all<br>
+                Details and Work Experience</p><br>
+            <a href="cv.pdf">Download CV</a>
+        </div>
+        <div class="images">
+            <img src="photo.png" alt="myphoto" class="boy">
+        </div>
+    </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="g0.jpg" alt="Image 1">
+                <div class="content">MG</div>
+            </div>
+            <div class="slide">
+                <img class="im" src="g1.jpg" alt="Image 2">
+                <div class="content">UG Graduation</div>
+            </div>
+            <div class="slide">
+                <img src="g2.jpg" alt="Image 3">
+                <div class="content">UG Friends</div>
+            </div>
+            <div class="slide">
+                <img src="g3.jpg" alt="Image 4">
+                <div class="content">UG Friends</div>
+            </div>
+            <div class="slide">
+                <img src="g4.jpg" alt="Image 5">
+                <div class="content">UG Friends</div>
+            </div>
+            <div class="slide">
+                <img src="g5.jpg" alt="Image 6">
+                <div class="content">UG Friends</div>
+            </div>
+            <div class="slide">
+                <img src="g6.jpg" alt="Image 7">
+                <div class="content">UG Friends</div>
+            </div>
+            <div class="slide">
+                <img src="g7.jpg" alt="Image 8">
+                <div class="content">UG Friends</div>
+            </div>
+            <div class="slide">
+                <img class="im" src="g8.jpg" alt="Image 9">
+                <div class="content">UG Capture</div>
+            </div>
+            <div class="slide">
+                <img class="im1" src="photo.png" alt="Image 0">
+                <div class="content">MG</div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+    
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+    
+        function moveSlide(step) {
+            slideIndex += step;
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - 1;
+            } else if (slideIndex >= totalSlides) {
+                slideIndex = 0;
+            }
+            updateSlidePosition();
+        }
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            updateSlidePosition();
+            setInterval(() => {
+                moveSlide(1);
+            }, 5000); 
+        });
+    </script>
+    
+
+    <div id="projects">
+        <h2>Completion Certificates</h2>
+        <div class="cert">
+            <div class="two">
+                <img src="i0.jpg" alt="">
+            </div>
+            <div class="three">
+                <img src="fsd.jpg" alt="">
+            </div>
+        </div>
+        <h2>MongoDB Completion Certificates</h2>
+        <div class="cert1">
+            <div class="four">
+                <img src="c1.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c2.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c3.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c4.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c5.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c6.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c7.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c8.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c9.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c10.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c11.jpg" alt="">
+            </div>
+            <div class="four">
+                <img src="c12.jpg" alt="">
+            </div>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="proj">
+            <div class="one">
+                <img src="i1.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i2.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i3.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i4.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i5.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i6.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i7.png" alt="">
+            </div>
+            <div class="one">
+                <img src="i8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2 class="h">Contact me</h2>
+        <i class="fas fa-envelope icon"></i>
+        <p><a href="mailto:meganathan25302@gmail.com">meganathan25302@gmail.com</a></p>
+        <i class="fas fa-phone icon1"></i>
+        <p><a href="tel:+918056858406">8056858406</a></p>
+    </div>
+
+    <div id="about">
+        Designed by <span class="spa">MG</span>
+    </div>
+
+    <footer>
+        &copy;2024 Portfolio Page. All rights reserved.
+
+    </footer>
+</body>
+
+</html>
